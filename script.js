@@ -34,14 +34,6 @@ function populateUI() {
     }
 }
 
-// Movie Select Event
-movieSelect.addEventListener('change', e =>{
-    ticketPrice = +e.target.value; // Update the ticket price
-    setMovieData(e.target.selectedIndex, e.target.value);
-    updateSelectedCount(); // Call the function to update the count
-})
-
-
 // Update the total amount and number of seats selected
 function updateSelectedCount() {
     const selectedseats = document.querySelectorAll('.row .seat.selected'); // Select all the selected seat
